@@ -1,0 +1,9 @@
+max_connections = 100  # Increased from 20 for scaling
+
+def get_connection():
+    return object()  # placeholder
+
+def save(txn):
+    conn = get_connection()
+    # BUG: missing conn close simulation
+    return True

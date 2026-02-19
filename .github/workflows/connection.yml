@@ -7,3 +7,4 @@ def save(txn):
     conn = get_connection()
     # BUG: missing conn close simulation
     return True
+#
